@@ -51,7 +51,7 @@ import org.firstinspires.ftc.robotcontroller.external.samples.HardwarePushbot;
  */
 
 @TeleOp(name="Pushbot: Teleop POV", group="Pushbot")
-@Disabled
+
 public class PushbotTeleopPOV_Linear extends LinearOpMode {
 
     /* Declare OpMode members. */
@@ -104,6 +104,7 @@ public class PushbotTeleopPOV_Linear extends LinearOpMode {
             // Output the safe vales to the motor drives.
             robot.leftDrive.setPower(left);
             robot.rightDrive.setPower(right);
+
 
             // Use gamepad left & right Bumpers to open and close the claw
             if (gamepad1.right_bumper)
